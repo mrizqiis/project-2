@@ -1,0 +1,35 @@
+code 
+buatkan menu pengembalian.php ,form tersebut berisi tentang tanggal kembali ,tanggal sekarang, denda ,total denda 
+untuk perhitungan denda ,dihitung selisih antara tanggal kembali dengan tanggal sekarang , jika tanggal sekarang melebihi tanggal kembali maka denda akan dihitung perhari ,berikan codingan php yg lengkap dengan minimum kesalahan
+
+
+✅ Tabel pengembalian dengan tanggal_sekarang
+sql
+Salin
+Edit
+CREATE TABLE pengembalian (
+    id_pengembalian INT AUTO_INCREMENT PRIMARY KEY,
+    id_sewa INT NOT NULL,                     -- relasi ke tabel sewa/transaksi
+    tanggal_kembali DATE NOT NULL,            -- tanggal mobil dikembalikan oleh pelanggan
+    tanggal_sekarang DATE NOT NULL,           -- tanggal sistem saat pencatatan
+    denda DECIMAL(10,2) DEFAULT 0.00,         -- denda jika terlambat
+    total_bayar DECIMAL(10,2) NOT NULL,       -- total yang dibayar
+    keterangan TEXT,                          -- catatan tambahan
+    dibuat_pada TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (id_sewa) REFERENCES sewa(id_sewa)
+);
+Alternatif: Isi tanggal_sekarang otomatis dengan tanggal hari ini
+Jika kamu ingin tanggal_sekarang otomatis diisi dengan tanggal saat ini, kamu bisa ubah sedikit:
+
+sql
+Salin
+Edit
+tanggal_sekarang DATE NOT NULL DEFAULT (CURRENT_DATE),
+Namun, DEFAULT CURRENT_DATE tidak selalu didukung oleh semua versi MySQL. Jika tidak bisa, kamu bisa isi lewat kode PHP saat insert data, misalnya:
+
+php
+Salin
+Edit
+$tanggal_sekarang = date('Y-m-d');
+Kalau kamu ingin contoh kode insert-nya juga, tinggal bilang saja!
