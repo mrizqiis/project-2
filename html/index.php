@@ -41,7 +41,7 @@
     <div id="slider">
         <div class="center">
             <h1> Selamat Datang di Alim Rugi </h1>
-            <h2> Jual Beli Mobil Terbaik Secara Online</h2>
+            <h2>Flatform Jual Beli Mobil Online Terbaik</h2>
             <br>
             <h3> Untuk Memulai Silahkan Mendaftar Terlebih Dahulu </h3>
             <a href="signup.php" class="btn-primary"> REGISTRASI </a>

@@ -1,4 +1,4 @@
-version: '3.8'
+sudoversion: '3.8'
 services:
   web:
     image: mrizqiis/project_2:01
