@@ -9,7 +9,7 @@
 
 <html>
 	<head>
-		<title> Alimrugi | Online shop for automobile </title>
+		<title> | Online shop for automobile </title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
