@@ -34,11 +34,8 @@ jobs:
           username: ${{ secrets.AWS_USERNAME }}
           key: ${{ secrets.AWS_PRIVATE_KEY }}
           script: | 
-          script: |
-           cd /home/${{ secrets.AWS_USERNAME }}/Project2
-           echo "===== DEBUG docker-compose.yml ====="
-            cat docker-compose.yml
-            echo "===================================="
+            cd Project2
             docker-compose down
+            docker image prune -a -f
             docker-compose up -d
             
