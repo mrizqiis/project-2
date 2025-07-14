@@ -40,7 +40,7 @@
     <!-- SLIDER -->
     <div id="slider">
         <div class="center">
-            <h1> Selamat Datang DI Alim KELOMPOK 2  </h1>
+            <h1> Selamat Datang DI Alim KELOMPOK  </h1>
             <h2>Flatform Jual Beli Mobil Online Terbaik Seindonesia</h2>
             <br>
             <h3> Untuk Memulai Silahkan Mendaftar Terlebih Dahulu </h3>
